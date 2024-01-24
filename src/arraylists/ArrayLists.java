@@ -61,8 +61,24 @@ public class ArrayLists {
         System.out.println(intArrayList.contains(5));
         System.out.println(intArrayList.contains(7));
         
+        // Should print 5
         System.out.println(intArrayList.get(0));
         
+        // Exercise - write a for loop to print all the elements of the arraylist
+        for (int i = 0; i < intArrayList.size(); i++) {
+            System.out.println(intArrayList.get(i));
+        }
+        
+        System.out.println(intArrayList.contains(5));
+        
+        intArrayList.set(0, 123);
+        System.out.println(intArrayList.contains(5));
+        System.out.println(intArrayList.get(0));
+        
+        // {123, 6, 8}
+        
+        
+       
     }
     
 }
