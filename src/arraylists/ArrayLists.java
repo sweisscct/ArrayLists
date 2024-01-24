@@ -21,7 +21,7 @@ import java.util.ArrayList;
  */
 public class ArrayLists {
     
-    public void newMethod2() {
+    public static void newMethod2() {
         System.out.println("Goodbye world");
     }
 
@@ -29,26 +29,7 @@ public class ArrayLists {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String inputFilePath = "...";
-        String outputFilePath = "...";
-        int[] intArray = {1, 2, 3, 4};
-        
-        // Can't have an ArrayList of ints
-//        ArrayList<int> intArrayList;
-
-        // To get around this, we use wrapper class
-        ArrayList<Integer> intArrayList = new ArrayList<>();
-        
-//        int num = Integer.parseInt("5") + 8;
-
-        // Adds the number to the end of the list
-        System.out.println(intArrayList.size());
-        intArrayList.add(6);
-        System.out.println(intArrayList.size());
-        intArrayList.add(7);
-        System.out.println(intArrayList.size());
-        intArrayList.add(8);
-        System.out.println(intArrayList.size());
+        newMethod2();
         
         // {6, 7, 8}
         
