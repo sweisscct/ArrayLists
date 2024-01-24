@@ -21,8 +21,8 @@ import java.util.ArrayList;
  */
 public class ArrayLists {
     
-    public void newMethod() {
-        System.out.println("Hello world");
+    public void newMethod2() {
+        System.out.println("Goodbye world");
     }
 
     /**
