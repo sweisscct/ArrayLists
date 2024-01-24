@@ -20,11 +20,17 @@ import java.util.ArrayList;
  *  
  */
 public class ArrayLists {
+    
+    public void newMethod() {
+        System.out.println("Hello world");
+    }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        String inputFilePath = "...";
+        String outputFilePath = "...";
         int[] intArray = {1, 2, 3, 4};
         
         // Can't have an ArrayList of ints
@@ -114,6 +120,7 @@ public class ArrayLists {
             System.out.println(rectangle.getColour());
         }  
         
+        // Onle remove the frist instance of the object from the list - the second will remain!
         rectList.remove(rect1);
         
         for (Rectangle rectangle : rectList) {
