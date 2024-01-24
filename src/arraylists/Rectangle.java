@@ -36,6 +36,10 @@ public class Rectangle {
     public boolean isIsFilled() {
         return isFilled;
     }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
     
     
     

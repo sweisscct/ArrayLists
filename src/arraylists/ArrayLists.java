@@ -77,8 +77,48 @@ public class ArrayLists {
         
         // {123, 6, 8}
         
+        Rectangle rect1 = new Rectangle(5, 2, "Yellow", true);
+        Rectangle rect2 = new Rectangle(5, 1, "Red", true);
+        Rectangle rect3 = new Rectangle(5, 3, "Green", true);
         
-       
+        ArrayList<Rectangle> rectList = new ArrayList<>();
+        rectList.add(rect1);
+        rectList.add(rect2);
+        rectList.add(rect3);
+        rectList.add(rect1);
+        
+        Rectangle rect4 = new Rectangle(5, 4, "Blue", true);
+        
+        System.out.println(rectList.contains(rect1));
+        System.out.println(rectList.contains(rect4));
+        System.out.println(  rectList  .get(0)   .getColour()  ); // arraylist  retrive element at index 0   getter for that object
+        
+        // Enchanced for loop
+        // Will loop through each element of an array or ArrayList
+        // Note: interates through the objects themselves, not their index
+        for (Rectangle rectangle : rectList) {
+            System.out.println(rectangle.getColour());
+        }
+        
+        rectList.get(0).setColour("Orange");
+        
+        for (Rectangle rectangle : rectList) {
+            System.out.println(rectangle.getColour());
+        }     
+        
+        System.out.println(rect1.getColour());
+        
+        rectList.get(3).setColour("Purple");
+        
+        for (Rectangle rectangle : rectList) {
+            System.out.println(rectangle.getColour());
+        }  
+        
+        rectList.remove(rect1);
+        
+        for (Rectangle rectangle : rectList) {
+            System.out.println(rectangle.getColour());
+        }  
     }
     
 }
